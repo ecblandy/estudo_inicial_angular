@@ -8,3 +8,7 @@
 }} @for(user of users; track user.id){
 <p>Nome: {{ user.name }}</p>
 }
+
+<h2>{{ _storageService.currentUser }}</h2>
+
+<button (click)="onUpdateCurrentUserName()">Atualizar nome</button>

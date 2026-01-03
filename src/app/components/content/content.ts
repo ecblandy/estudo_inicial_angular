@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { StorageService } from '../../services/storage';
 
 @Component({
   selector: 'app-content',
@@ -18,4 +19,10 @@ export class ContentComponent {
       name: 'Teste',
     },
   ];
+
+  readonly _storageService = inject(StorageService);
+
+  onUpdateCurrentUserName() {
+    this._storageService.updateCurrentUserNameService();
+  }
 }
