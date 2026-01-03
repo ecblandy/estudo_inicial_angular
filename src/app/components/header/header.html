@@ -1,8 +1,12 @@
 <p [class.my-color]="applyClass">{{ titleHeader }}</p>
 
+<h1>{{ title }}</h1>
+
 <input [value]="initialValueInput" class="bg-red-300 p-3" />
 <input [(ngModel)]="initialValueInput" class="bg-amber-300 p-3" />
 
 <h3 [style.color]="colorStyle">asiuhauhsuhaush</h3>
 
 <button (click)="onUpdateUser()" class="bg-black text-white p-6 rounded-2xl">Atualizar</button>
+
+<button (click)="emitValue()">Atualizar pai</button>

@@ -10,5 +10,8 @@ import { ContentComponent } from './components/content/content';
   styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('estudo_angular');
+  reciveVlaue(text: string) {
+    console.log('valor recebido' + text);
+  }
+  titleApp = 'Titulo do header App';
 }
