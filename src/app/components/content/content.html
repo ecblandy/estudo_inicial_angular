@@ -1,1 +1,10 @@
-<p>content works!</p>
+@if(userType == "cool"){
+<p>❤️</p>
+
+}@else {
+<p>😊</p>
+} @switch (userType) { @case ("happy") {
+<p>as8ashuashu</p>
+}} @for(user of users; track user.id){
+<p>Nome: {{ user.name }}</p>
+}
