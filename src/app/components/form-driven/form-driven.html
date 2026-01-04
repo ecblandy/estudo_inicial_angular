@@ -1,0 +1,6 @@
+<form #userForm="ngForm" (ngSubmit)="submitForm(userForm)">
+  <label for="">Nome</label>
+  <input name="name" [(ngModel)]="userName" required="" class="bg-red-300" />
+
+  <button [disabled]="!userForm.form.valid" type="submit">Enviar</button>
+</form>
