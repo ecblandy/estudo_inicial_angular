@@ -1,0 +1,5 @@
+<form [formGroup]="userForm" (ngSubmit)="submitForm()">
+  <label for="name">Nome:</label>
+  <input id="name" formControlName="name" class="bg-amber-400" />
+  <button [disabled]="!userForm.valid">Enviar</button>
+</form>

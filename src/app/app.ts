@@ -4,10 +4,11 @@ import { HeaderComponent } from './components/header/header';
 import { ContentComponent } from './components/content/content';
 import { Api } from "./components/api/api";
 import { FormDriven } from "./components/form-driven/form-driven";
+import { FormReactive } from "./components/form-reactive/form-reactive";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent, ContentComponent, Api, FormDriven],
+  imports: [RouterOutlet, HeaderComponent, ContentComponent, Api, FormDriven, FormReactive],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
